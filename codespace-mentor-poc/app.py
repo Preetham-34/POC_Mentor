@@ -24,7 +24,7 @@ if "current_skill" not in st.session_state:
 
 init_progress(TRACK_ORDER)
 
-st.title("🧑‍🏫 Codespace Mentor — Streamlit PoC")
+st.title(" Codespace Mentor ")
 
 with st.sidebar:
     st.header("Progress")
