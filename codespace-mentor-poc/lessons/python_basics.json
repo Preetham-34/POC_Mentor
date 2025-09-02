@@ -1,0 +1,38 @@
+{
+  "py-vars-01": {
+    "id": "py-vars-01",
+    "title": "Python Variables",
+    "overview": "Variables bind names to values. Think of them as labeled boxes for data.",
+    "example": "x = 5\nname = 'Alice'\nprint(x, name)",
+    "exercises": [
+      {
+        "id": "ex1",
+        "prompt": "Create a variable named age and assign it 21.",
+        "rubric": "We expect a variable called age whose value is an integer.",
+        "checker": "variables:age"
+      },
+      {
+        "id": "ex2",
+        "prompt": "Create a variable called name and assign it a string (your name).",
+        "rubric": "We expect a variable called name whose value is a string.",
+        "checker": "variables:name"
+      }
+    ],
+    "skill_id": "py.variables"
+  },
+  "py-func-01": {
+    "id": "py-func-01",
+    "title": "Python Functions",
+    "overview": "Functions package reusable logic. Use `return` to send a value back.",
+    "example": "def add(a, b):\n    return a + b\n\nresult = add(2, 3)\nprint(result)",
+    "exercises": [
+      {
+        "id": "ex1",
+        "prompt": "Write a function greet(name) that returns 'Hello, <name>!'",
+        "rubric": "We expect a function greet that returns a string using the argument.",
+        "checker": "function:greet"
+      }
+    ],
+    "skill_id": "py.functions"
+  }
+}
