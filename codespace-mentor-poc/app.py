@@ -1,13 +1,17 @@
 import json
 import streamlit as st
 from streamlit_ace import st_ace
+from pathlib import Path
 
 from utils.mentor import mentor_reply
 from utils.progress import init_progress, update_mastery
 from utils.sandbox import check_exercise
 from utils.tts import speak
 
-with open("lessons/python_basics.json") as f:
+# Resolve lessons path relative to this file, so it works on Streamlit Cloud
+APP_DIR = Path(__file__).parent
+LESSONS_PATH = APP_DIR / "lessons" / "python_basics.json"
+with open(LESSONS_PATH) as f:
     LESSONS = json.load(f)
 
 TRACK_ORDER = ["py.variables", "py.functions"]
